@@ -69,6 +69,10 @@ function draw() {
 
   //strokeWeight(5)
   //line(130, 220, 200, 200)
+  fill("purple")
+  textSize(30)
+  text("PRESS SPACE TO GET A SECOND CHANCE", 400, 50);
+  text("SCORE: " + score, 20, 50)
 }
 
 function mouseDragged()
