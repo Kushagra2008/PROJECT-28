@@ -6,6 +6,7 @@ const Body = Matter.Body;
 var stone1, tree1, ground1, boy, rope1;
 var mango1, mango2, mango3, mango4, mango5;
 var mango6, mango7, mango8, mango9, mango10;
+var score = 0;
 
 function preload()
 {
@@ -100,6 +101,8 @@ function detectCollison(stone, mango)
 	var distance = dist(sbp.x, sbp.y, mbp.x, mbp.y)
 	if (distance <= mango.width + stone.width)
 	{
+		score += 1
 		Matter.Body.setStatic(mango.body, false)
 	}
 }
+
